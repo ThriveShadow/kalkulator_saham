@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart'; // Import Riverpod
 import 'package:kalkulator_saham/screens/home.dart';
-import 'package:kalkulator_saham/screens/profit.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp())); // Wrap MyApp with ProviderScope

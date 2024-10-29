@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class ProfitLoss extends StatefulWidget {
-  const ProfitLoss({super.key});
+  final String profit;
+  final String percentage;
+  const ProfitLoss({super.key, this.profit = '', this.percentage = ''});
 
   @override
   State<ProfitLoss> createState() => _ProfitFormState();
@@ -32,7 +35,29 @@ class _ProfitFormState extends State<ProfitLoss> {
               borderRadius: BorderRadius.all(Radius.circular(5)),
               color: Color.fromARGB(255, 15, 164, 223),
             ),
-            //child:
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  widget.profit.isNotEmpty
+                      ? 'Rp ${NumberFormat.currency(locale: 'id', symbol: '').format(double.tryParse(widget.profit) ?? 0)}'
+                      : '',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 30,
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  widget.percentage.isNotEmpty
+                      ? '(${(double.tryParse(widget.percentage) ?? 0).toStringAsFixed(2)}%)'
+                      : '',
+                  style: const TextStyle(
+                    fontSize: 30,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

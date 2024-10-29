@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kalkulator_saham/screens/home.dart';
 
 class Back extends StatelessWidget {
   const Back(this.text, this.color, {super.key});
