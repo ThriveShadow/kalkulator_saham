@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kalkulator_saham/widget/background.dart';
+import 'package:kalkulator_saham/widgets/background.dart';
 import 'package:kalkulator_saham/screens/profit.dart';
-import 'package:kalkulator_saham/widget/Yellow_button.dart';
-import 'package:kalkulator_saham/widget/back_button.dart';
+import 'package:kalkulator_saham/widgets/Yellow_button.dart';
+import 'package:kalkulator_saham/widgets/back_button.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});

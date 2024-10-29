@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kalkulator_saham/widget/background.dart';
-import 'package:kalkulator_saham/widget/form.dart';
-import 'package:kalkulator_saham/widget/net_amount.dart';
-import 'package:kalkulator_saham/widget/profit_loss.dart';
+import 'package:kalkulator_saham/widgets/background.dart';
+import 'package:kalkulator_saham/widgets/form.dart';
+import 'package:kalkulator_saham/widgets/net_amount.dart';
+import 'package:kalkulator_saham/widgets/profit_loss.dart';
 
 class ProfitCalc extends StatefulWidget {
   const ProfitCalc({super.key});

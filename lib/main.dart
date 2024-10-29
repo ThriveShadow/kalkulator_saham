@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart'; // Import Riverpod
 import 'package:kalkulator_saham/screens/home.dart';
 import 'package:kalkulator_saham/screens/profit.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp())); // Wrap MyApp with ProviderScope
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       darkTheme: ThemeData.dark(),
-      home: const ProfitCalc(),
+      home:
+          const HomeScreen(), // Ensure ProfitCalc uses Riverpod's ConsumerWidget
     );
   }
 }

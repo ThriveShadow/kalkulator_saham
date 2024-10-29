@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kalkulator_saham/screens/menu.dart';
-import 'package:kalkulator_saham/widget/background.dart';
+import 'package:kalkulator_saham/widgets/background.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
