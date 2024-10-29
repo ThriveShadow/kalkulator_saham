@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kalkulator_saham/screens/home.dart';
+import 'package:kalkulator_saham/screens/profit.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       darkTheme: ThemeData.dark(),
-      home: const HomeScreen(),
+      home: const ProfitCalc(),
     );
   }
 }

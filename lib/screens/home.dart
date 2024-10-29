@@ -14,11 +14,8 @@ class HomeScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 60),
               const Text(
-                'Kalkulator',
-                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-              ),
-              const Text(
-                'Saham',
+                'Kalkulator\nSaham',
+                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
               const Spacer(),

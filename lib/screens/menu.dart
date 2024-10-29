@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kalkulator_saham/widget/background.dart';
 import 'package:kalkulator_saham/screens/profit.dart';
+import 'package:kalkulator_saham/widget/Yellow_button.dart';
+import 'package:kalkulator_saham/widget/back_button.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
@@ -14,192 +16,38 @@ class MenuScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 60),
               const Text(
-                'Kalkulator',
+                'Kalkulator\nSaham',
+                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
-              const Text(
-                'Saham',
-                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(
-                height: 600,
-                width: 400,
-                child: ListView(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
-                        minimumSize: const Size(400, 70),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                      onPressed: () {
+              Expanded(
+                child: SizedBox(
+                  height: 600,
+                  width: 400,
+                  child: ListView(
+                    children: [
+                      YellowButton('Profit Calculator', onPressed: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => const ProfitCalc()),
                         );
-                      },
-                      child: const Text(
-                        'Profit Calculator',
-                        style: TextStyle(fontSize: 25),
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
-                        minimumSize: const Size(400, 70),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Text(
-                        'Average Calculator',
-                        style: TextStyle(fontSize: 25),
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
-                        minimumSize: const Size(400, 70),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Compound Interest',
-                            style: TextStyle(fontSize: 25),
-                          ),
-                          Text(
-                            'Calculator',
-                            style: TextStyle(fontSize: 25),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
-                        minimumSize: const Size(400, 70),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Cash Dividend',
-                            style: TextStyle(fontSize: 25),
-                          ),
-                          Text(
-                            'Calculator',
-                            style: TextStyle(fontSize: 25),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
-                        minimumSize: const Size(400, 70),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Text(
-                        'Pivot Point',
-                        style: TextStyle(fontSize: 25),
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
-                        minimumSize: const Size(400, 70),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Fibonacci Calculator -',
-                            style: TextStyle(fontSize: 25),
-                          ),
-                          Text(
-                            'Uptrend',
-                            style: TextStyle(fontSize: 25),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
-                        minimumSize: const Size(400, 70),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Fibonacci Calculator -',
-                            style: TextStyle(fontSize: 25),
-                          ),
-                          Text(
-                            'Downtrend',
-                            style: TextStyle(fontSize: 25),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
-                        foregroundColor: Colors.black,
-                        minimumSize: const Size(400, 70),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                      onPressed: () {},
-                      child: const Text(
-                        'Price Action',
-                        style: TextStyle(fontSize: 25),
-                      ),
-                    ),
-                  ],
+                      }),
+                      const YellowButton('Average Calculator'),
+                      const YellowButton('Compound Interest Calculator'),
+                      const YellowButton('Cash Dividend Calculator'),
+                      const YellowButton('Pivot Point'),
+                      const YellowButton('Fibonacci Calculator -\n Uptrend'),
+                      const YellowButton('Fibonacci Calculator -\n Downtrend'),
+                      const YellowButton('Price Action'),
+                      const YellowButton('Watchlist'),
+                    ],
+                  ),
                 ),
               ),
-              const SizedBox(height: 15),
-              const SizedBox(height: 10),
+              const SizedBox(height: 50),
+              const Back('Back', Colors.white),
+              const SizedBox(height: 25),
               const Text('Versi 2024.10.26'),
               const SizedBox(height: 40),
             ],
