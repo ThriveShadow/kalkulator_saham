@@ -27,7 +27,7 @@ class _MyWidgetState extends ConsumerState<ProfitCalc> {
           child: Column(
             children: [
               const SizedBox(
-                height: 100,
+                height: 30,
               ),
               Container(
                 alignment: Alignment.centerLeft,
@@ -82,7 +82,7 @@ class _MyWidgetState extends ConsumerState<ProfitCalc> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
                         foregroundColor: Colors.white,
-                        minimumSize: const Size(30, 70),
+                        minimumSize: const Size(30, 60),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -103,7 +103,7 @@ class _MyWidgetState extends ConsumerState<ProfitCalc> {
                       },
                       child: const Text(
                         'Reset',
-                        style: TextStyle(fontSize: 25),
+                        style: TextStyle(fontSize: 24),
                       ),
                     ),
                   ),
@@ -113,7 +113,7 @@ class _MyWidgetState extends ConsumerState<ProfitCalc> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.yellow,
                         foregroundColor: Colors.black,
-                        minimumSize: const Size(310, 70),
+                        minimumSize: const Size(255, 60),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
                         ),
@@ -138,14 +138,14 @@ class _MyWidgetState extends ConsumerState<ProfitCalc> {
                       },
                       child: const Text(
                         'Hasil',
-                        style: TextStyle(fontSize: 25),
+                        style: TextStyle(fontSize: 24),
                       ),
                     ),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 50,
+                height: 40,
               ),
             ],
           ),

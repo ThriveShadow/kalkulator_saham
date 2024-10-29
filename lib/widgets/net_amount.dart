@@ -15,7 +15,7 @@ class _ProfitFormState extends State<NetAmount> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 430.0,
+      width: 370.0,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(5)),
         color: Color.fromARGB(255, 109, 139, 165),
@@ -26,7 +26,7 @@ class _ProfitFormState extends State<NetAmount> {
             'Net Amount',
             style: TextStyle(
               fontFamily: 'Arial',
-              fontSize: 24,
+              fontSize: 22,
             ),
           ),
           Row(
@@ -35,7 +35,7 @@ class _ProfitFormState extends State<NetAmount> {
               Expanded(
                 child: Container(
                   width: double.infinity,
-                  height: 80,
+                  height: 70,
                   decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(5)),
                     color: Color.fromARGB(255, 0, 112, 4),
@@ -46,7 +46,7 @@ class _ProfitFormState extends State<NetAmount> {
                       const Text('Buy',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 30,
+                            fontSize: 24,
                           )),
                       Text(
                         widget.buy.isNotEmpty
@@ -54,7 +54,7 @@ class _ProfitFormState extends State<NetAmount> {
                             : '',
                         textAlign: TextAlign.center,
                         style: const TextStyle(
-                          fontSize: 20,
+                          fontSize: 18,
                         ),
                       ),
                     ],
@@ -64,7 +64,7 @@ class _ProfitFormState extends State<NetAmount> {
               Expanded(
                 child: Container(
                   width: double.infinity,
-                  height: 80,
+                  height: 70,
                   decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(5)),
                     color: Color.fromARGB(255, 107, 7, 0),
@@ -75,7 +75,7 @@ class _ProfitFormState extends State<NetAmount> {
                       const Text('Sell',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 30,
+                            fontSize: 24,
                           )),
                       Text(
                           widget.sell.isNotEmpty
@@ -83,7 +83,7 @@ class _ProfitFormState extends State<NetAmount> {
                               : '',
                           textAlign: TextAlign.center,
                           style: const TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                           )),
                     ],
                   ),

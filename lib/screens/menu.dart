@@ -15,10 +15,26 @@ class MenuScreen extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(height: 60),
-              const Text(
-                'Kalkulator\nSaham',
+              RichText(
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                text: TextSpan(
+                  children: [
+                    const TextSpan(
+                      text: 'Kalkulator\nSaham ',
+                      style: TextStyle(
+                          fontSize: 50,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    WidgetSpan(
+                      alignment: PlaceholderAlignment.bottom,
+                      child: Image.asset(
+                        'assets/images/kalkulator_saham_icon.png',
+                        height: 50,
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Expanded(
                 child: SizedBox(

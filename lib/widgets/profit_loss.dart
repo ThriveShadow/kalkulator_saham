@@ -14,7 +14,7 @@ class _ProfitFormState extends State<ProfitLoss> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 430.0,
+      width: 370.0,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(5)),
         color: Color.fromARGB(255, 26, 104, 173),
@@ -25,12 +25,12 @@ class _ProfitFormState extends State<ProfitLoss> {
             'Profit / Loss',
             style: TextStyle(
               fontFamily: 'Arial',
-              fontSize: 24,
+              fontSize: 22,
             ),
           ),
           Container(
             width: double.infinity,
-            height: 60,
+            height: 50,
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(5)),
               color: Color.fromARGB(255, 15, 164, 223),
@@ -44,7 +44,7 @@ class _ProfitFormState extends State<ProfitLoss> {
                       : '',
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontSize: 30,
+                    fontSize: 26,
                   ),
                 ),
                 const SizedBox(width: 10),
@@ -53,7 +53,7 @@ class _ProfitFormState extends State<ProfitLoss> {
                       ? '(${(double.tryParse(widget.percentage) ?? 0).toStringAsFixed(2)}%)'
                       : '',
                   style: const TextStyle(
-                    fontSize: 30,
+                    fontSize: 26,
                   ),
                 ),
               ],
